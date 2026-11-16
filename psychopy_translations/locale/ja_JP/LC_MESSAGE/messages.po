@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PsychoPy 2027.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 02:14+0000\n"
+"POT-Creation-Date: 2026-11-16 18:01+0000\n"
 "PO-Revision-Date: 2025-07-16 14:09+0900\n"
 "Last-Translator: Hiroyuki Sogo <hsogo12600@gmail.com>\n"
 "Language-Team: Hiroyuki Sogo <hsogo12600@gmail.com>\n"
@@ -340,6 +340,7 @@ msgstr "追加..."
 #: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/coder/ribbon/Ribbon.svelte
 #: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
+#: psychopy-studio/src/routes/runner/ribbon/Ribbon.svelte
 msgid "File"
 msgstr "ファイル"
 
@@ -375,8 +376,8 @@ msgstr "繰り返す"
 
 #: psychopy-app/src/psychopy_app/builder/builder.py
 #: psychopy-app/src/psychopy_app/coder/coder.py
+#: psychopy-studio/src/lib/pavlovia/ProjectPanel.svelte
 #: psychopy-studio/src/routes/builder/ribbon/Ribbon.svelte
-#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/coder/ribbon/Ribbon.svelte
 msgid "Find"
 msgstr "検索"
@@ -393,7 +394,6 @@ msgid "Experiment"
 msgstr "実験"
 
 #: psychopy-app/src/psychopy_app/builder/builder.py
-#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
 msgid "Experiment settings"
 msgstr "実験の設定"
 
@@ -404,6 +404,7 @@ msgstr "実験の設定"
 #: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/coder/ribbon/Ribbon.svelte
 #: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
+#: psychopy-studio/src/routes/runner/ribbon/Ribbon.svelte
 msgid "Run"
 msgstr "実行"
 
@@ -415,6 +416,7 @@ msgstr "Runner"
 
 #: psychopy-app/src/psychopy_app/builder/builder.py
 #: psychopy-app/src/psychopy_app/runner/runner.py
+#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
 msgid "Pilot in browser"
 msgstr "ブラウザで動作確認"
@@ -466,11 +468,13 @@ msgstr " キャンセル "
 
 #: psychopy-app/src/psychopy_app/builder/dialogs/__init__.py
 #: psychopy-studio/src/routes/builder/flow/controls/AddRoutine.svelte
+#: psychopy-studio/src/routes/builder/routines/Notebook.svelte
 msgid "New Routine"
 msgstr "新しいRoutine"
 
 #: psychopy-app/src/psychopy_app/builder/dialogs/findDlg.py
 #: psychopy-studio/src/lib/dialogs/find/Dialog.svelte
+#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
 msgid "Find in experiment..."
 msgstr "実験内を検索..."
 
@@ -493,6 +497,7 @@ msgstr "既定値"
 
 #: psychopy-app/src/psychopy_app/coder/codeEditorBase.py
 #: psychopy-app/src/psychopy_app/coder/fileBrowser.py
+#: psychopy-studio/src/lib/ui/paramCtrls/ctrls/FileListCtrl.svelte
 #: psychopy/psychopy/monitors/MonitorCenter.py
 msgid "Delete"
 msgstr "削除"
@@ -5705,7 +5710,6 @@ msgstr "デバイスマネージャ"
 
 #: psychopy-app/src/psychopy_app/builder/dialogs/paramCtrls.py
 #: psychopy-studio/src/lib/ui/paramCtrls/ctrls/DictCtrl.svelte
-#: psychopy-studio/src/lib/ui/paramCtrls/ctrls/FileListCtrl.svelte
 msgid "Add item"
 msgstr "項目を追加"
 
@@ -6137,7 +6141,6 @@ msgstr ""
 msgid "Retry"
 msgstr ""
 
-#: psychopy-studio/src/lib/dialogs/find/Dialog.svelte
 #: psychopy-studio/src/lib/ui/input/SearchCtrl.svelte
 msgid "Search..."
 msgstr ""
@@ -6251,6 +6254,9 @@ msgid "Searching PyPi..."
 msgstr ""
 
 #: psychopy-studio/src/lib/dialogs/preferences/PrefsDialog.svelte
+#: psychopy-studio/src/lib/ui/icon/Icon.svelte
+#: psychopy-studio/src/lib/ui/paramCtrls/ctrls/ChoiceCtrl.svelte
+#: psychopy-studio/src/lib/ui/paramCtrls/ctrls/ConditionsCtrl.svelte
 #: psychopy-studio/src/lib/ui/paramCtrls/ctrls/MultipleChoiceCtrl.svelte
 #: psychopy-studio/src/lib/ui/paramCtrls/ctrls/RichChoiceCtrl.svelte
 msgid "Loading..."
@@ -6273,13 +6279,8 @@ msgid "Open color picker"
 msgstr ""
 
 #: psychopy-studio/src/lib/ui/paramCtrls/ctrls/DictCtrl.svelte
-#: psychopy-studio/src/lib/ui/paramCtrls/ctrls/FileListCtrl.svelte
 #: psychopy-studio/src/routes/runner/files/Panel.svelte
 msgid "Remove item"
-msgstr ""
-
-#: psychopy-studio/src/lib/ui/paramCtrls/ctrls/FileListCtrl.svelte
-msgid "Add multiple items"
 msgstr ""
 
 #: psychopy-studio/src/lib/ui/paramCtrls/ctrls/FontCtrl.svelte
@@ -6566,11 +6567,8 @@ msgstr ""
 msgid "New file"
 msgstr ""
 
-#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/builder/ribbon/Ribbon.svelte
-#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/coder/ribbon/Ribbon.svelte
-#: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
 msgid "Open file"
 msgstr ""
 
@@ -6582,11 +6580,8 @@ msgstr ""
 msgid "Save file"
 msgstr ""
 
-#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/builder/ribbon/Ribbon.svelte
-#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/coder/ribbon/Ribbon.svelte
-#: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
 msgid "Save file as"
 msgstr ""
 
@@ -6606,21 +6601,7 @@ msgstr ""
 #: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
-msgid "Preferences"
-msgstr ""
-
-#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
-#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
-#: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
 msgid "Reset preferences"
-msgstr ""
-
-#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
-msgid "Report bug"
-msgstr ""
-
-#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
-msgid "Find in experiment"
 msgstr ""
 
 #: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
@@ -6725,6 +6706,7 @@ msgid "PsychoPy Coder"
 msgstr ""
 
 #: psychopy-studio/src/routes/coder/+page.svelte
+#: psychopy-studio/src/routes/runner/+page.svelte
 msgid "Files"
 msgstr ""
 
@@ -6752,6 +6734,7 @@ msgid "Data Files"
 msgstr ""
 
 #: psychopy-studio/src/routes/coder/files/DirCtrl.svelte
+#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
 msgid "Open folder..."
 msgstr ""
 
@@ -6824,6 +6807,7 @@ msgstr ""
 msgid "Clear stdout"
 msgstr ""
 
+#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
 msgid "Run in browser"
 msgstr ""
@@ -6844,10 +6828,12 @@ msgstr ""
 msgid "Save configuration as"
 msgstr ""
 
+#: psychopy-studio/src/routes/coder/ribbon/Ribbon.svelte
 #: psychopy-studio/src/routes/runner/ribbon/Ribbon.svelte
 msgid "Experiment will run in pilot mode"
 msgstr ""
 
+#: psychopy-studio/src/routes/coder/ribbon/Ribbon.svelte
 #: psychopy-studio/src/routes/runner/ribbon/Ribbon.svelte
 msgid "Experiment will run in run mode"
 msgstr ""
@@ -6965,6 +6951,7 @@ msgstr ""
 msgid "Choose folder for Pavlovia project"
 msgstr ""
 
+#: psychopy-studio/src/lib/pavlovia/ProjectPanel.svelte
 #: psychopy-studio/src/lib/pavlovia/utils.svelte.js
 msgid "Clone"
 msgstr ""
@@ -7056,6 +7043,7 @@ msgid "quitPsychoJS needs to be returned"
 msgstr ""
 
 #: psychopy-app/src/psychopy_app/ribbon.py
+#: psychopy-studio/src/lib/pavlovia/search/SearchProjects.svelte
 msgid "Search projects..."
 msgstr "プロジェクトを検索..."
 
@@ -7713,6 +7701,7 @@ msgstr "実験にRoutineがないのでコンポーネントを追加できま�
 
 #: psychopy-app/src/psychopy_app/builder/builder.py
 #: psychopy-app/src/psychopy_app/preferencesDlg.py
+#: psychopy-studio/src/lib/ui/icon/Icon.svelte
 msgid "Error"
 msgstr "エラー"
 
@@ -7911,6 +7900,7 @@ msgstr "Pavlovia上のプロジェクトと同期"
 #: psychopy-app/src/psychopy_app/builder/builder.py
 #: psychopy-app/src/psychopy_app/coder/coder.py
 #: psychopy-app/src/psychopy_app/runner/runner.py
+#: psychopy-studio/src/routes/runner/+page.svelte
 msgid "Pavlovia"
 msgstr "Pavlovia"
 
@@ -8407,6 +8397,7 @@ msgstr "シェル"
 
 #: psychopy-app/src/psychopy_app/coder/coder.py
 #: psychopy-app/src/psychopy_app/plugin_manager/dialog.py
+#: psychopy-studio/src/routes/runner/+page.svelte
 msgid "Output"
 msgstr "出力"
 
@@ -9307,6 +9298,7 @@ msgid "Data"
 msgstr "データ"
 
 #: psychopy-app/src/psychopy_app/localizedStrings.py
+#: psychopy-studio/src/lib/ui/input/InputTextCtrl.svelte
 msgid "Input"
 msgstr "入力"
 
@@ -10599,6 +10591,7 @@ msgstr ""
 "続いてローカルファイルの変更がPavloviaに反映されます(push)."
 
 #: psychopy-app/src/psychopy_app/pavlovia_ui/project.py
+#: psychopy-studio/src/lib/dialogs/bugReport/BugReport.svelte
 #: psychopy-studio/src/lib/pavlovia/utils.svelte.js
 msgid "Download"
 msgstr "ダウンロード"
@@ -10762,10 +10755,12 @@ msgid "Sort..."
 msgstr "並べ替え..."
 
 #: psychopy-app/src/psychopy_app/pavlovia_ui/search.py
+#: psychopy-studio/src/lib/pavlovia/search/SearchProjects.svelte
 msgid "Filter..."
 msgstr "フィルタ..."
 
 #: psychopy-app/src/psychopy_app/pavlovia_ui/search.py
+#: psychopy-studio/src/lib/pavlovia/search/FilterDlg.svelte
 msgid "Author"
 msgstr "作者"
 
@@ -10790,10 +10785,12 @@ msgid "Plugins & Packages"
 msgstr "プラグインとパッケージ"
 
 #: psychopy-app/src/psychopy_app/plugin_manager/dialog.py
+#: psychopy-studio/src/lib/dialogs/pluginManager/Dialog.svelte
 msgid "Plugins"
 msgstr "プラグイン"
 
 #: psychopy-app/src/psychopy_app/plugin_manager/dialog.py
+#: psychopy-studio/src/lib/dialogs/pluginManager/Dialog.svelte
 msgid "Packages"
 msgstr "パッケージ"
 
@@ -11128,11 +11125,13 @@ msgid "misc"
 msgstr "その他"
 
 #: psychopy-app/src/psychopy_app/runner/runner.py
+#: psychopy-studio/src/routes/runner/+page.svelte
 msgid "Alerts"
 msgstr "注意"
 
 #: psychopy-app/src/psychopy_app/runner/runner.py
 #: psychopy-studio/src/routes/coder/shell/ShellNotebook.svelte
+#: psychopy-studio/src/routes/runner/+page.svelte
 msgid "Stdout"
 msgstr "標準出力"
 
@@ -11178,6 +11177,9 @@ msgid "Could not get image from: {}, using blank image instead."
 msgstr "画像を {} から読み込めませんでした. 代わりに空白の画像を使用します."
 
 #: psychopy-app/src/psychopy_app/utils.py
+#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
+#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
+#: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
 msgid "Save file as..."
 msgstr "名前を付けて保存..."
 
@@ -11293,6 +11295,7 @@ msgid ""
 msgstr "デバイスマネージャに{}というデバイスは登録されていません. いま登録しますか?"
 
 #: psychopy-app/src/psychopy_app/deviceManager/addDialog.py
+#: psychopy-studio/src/lib/dialogs/deviceManager/addDevice/AddDeviceDialog.svelte
 msgid "Available devices"
 msgstr "利用可能なデバイス"
 
@@ -11385,10 +11388,6 @@ msgstr ""
 msgid "Once you have created and saved your table, remember to add it here."
 msgstr ""
 
-#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
-msgid "Open folder"
-msgstr ""
-
 #: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
 #: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
 msgid "Paste text"
@@ -11441,7 +11440,7 @@ msgid ""
 "suppresses drift on an idle stick."
 msgstr ""
 
-#: psychopy-studio/src/lib/pavlovia/browseProjects/BrowseDemosDlg.svelte
+#: psychopy-studio/src/lib/pavlovia/demos/BrowseDemosDlg.svelte
 msgid "Browse demos"
 msgstr ""
 
@@ -11606,7 +11605,7 @@ msgid ""
 "console); it may be in the console."
 msgstr ""
 
-#: psychopy/psychopy/experiment/components/keyboard/__init__.py
+#: psychopy/psychopy/experiment/components/settings/__init__.py
 msgid "Ignore keypresses outside PsychoPy"
 msgstr ""
 
@@ -11724,7 +11723,7 @@ msgstr ""
 msgid "Not installed"
 msgstr ""
 
-#: psychopy/psychopy/experiment/components/keyboard/__init__.py
+#: psychopy/psychopy/experiment/components/settings/__init__.py
 msgid ""
 "Only collect responses when the PsychoPy window has focus (this is better "
 "for security)"
@@ -11786,11 +11785,7 @@ msgstr ""
 msgid "Reusing Routines wherever possible will make your experiment"
 msgstr ""
 
-#: psychopy-studio/src/lib/ui/input/SearchCtrl.svelte
-msgid "Search"
-msgstr ""
-
-#: psychopy-studio/src/lib/pavlovia/browseProjects/BrowseDemos.svelte
+#: psychopy-studio/src/lib/pavlovia/demos/BrowseDemos.svelte
 msgid "Search demos..."
 msgstr ""
 
@@ -11944,6 +11939,229 @@ msgid ""
 "Pavlovia?"
 msgstr ""
 
+#: psychopy-studio/src/lib/pavlovia/search/SearchProjectsDlg.svelte
+msgid "Search projects"
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/pluginManager/VenvChooser.svelte
+msgid "(default)"
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/monitorCenter/MonitorPage.svelte
+msgid "+ New calibration"
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/pluginManager/PsychoPyBranchDlg.svelte
+msgid "Branch:"
+msgstr ""
+
+#: psychopy-studio/src/lib/ui/paramCtrls/ctrls/FileCtrl.svelte
+msgid "Browse for file..."
+msgstr ""
+
+#: psychopy-studio/src/lib/pavlovia/CommitDlg.svelte
+msgid "Changed files:"
+msgstr ""
+
+#: psychopy-studio/src/lib/pavlovia/search/FilterDlg.svelte
+msgid "Clear"
+msgstr ""
+
+#: psychopy-studio/src/lib/ui/message/Message.svelte
+msgid "Dismiss"
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid ""
+"Each user on this computer gets control of their own PsychoPy version and "
+"plugins"
+msgstr ""
+
+#: psychopy-studio/src/routes/builder/flow/EntryPoint.svelte
+#: psychopy-studio/src/routes/builder/routines/EntryPoint.svelte
+msgid "Entry point"
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid "Environment location..."
+msgstr ""
+
+#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
+msgid "Experiment settings..."
+msgstr ""
+
+#: psychopy-studio/src/routes/builder/components/FilterDialog.svelte
+msgid "Filter Components"
+msgstr ""
+
+#: psychopy-studio/src/lib/pavlovia/search/FilterDlg.svelte
+msgid "Filter projects"
+msgstr ""
+
+#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
+msgid "Find..."
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/pluginManager/PsychoPyBranchDlg.svelte
+msgid "Git repository:"
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/pluginManager/PsychoPyBranchDlg.svelte
+msgid "Install PsychoPy from Git"
+msgstr ""
+
+#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
+msgid "Install PsychoPy from Git..."
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid ""
+"Installing/removing a PsychoPy version or plugin installs/removes it for "
+"everyone"
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/bugReport/BugReport.svelte
+msgid "JSON file"
+msgstr ""
+
+#: psychopy-studio/src/lib/pavlovia/search/SearchProjects.svelte
+msgid "Log in to show only projects belonging to you"
+msgstr ""
+
+#: psychopy-studio/src/routes/runner/outputs/AlertsOutput.svelte
+msgid "More info"
+msgstr ""
+
+#: psychopy-studio/src/lib/pavlovia/search/FilterDlg.svelte
+msgid "Only include projects by a specific user or group"
+msgstr ""
+
+#: psychopy-studio/src/lib/pavlovia/search/SearchProjects.svelte
+msgid "Only show projects belonging to you"
+msgstr ""
+
+#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
+#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
+#: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
+msgid "Open file..."
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/deepLink/DeepLink.svelte
+#, python-brace-format
+msgid "Opening {}..."
+msgstr ""
+
+#: psychopy-studio/src/routes/builder/ribbon/Menu.svelte
+#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
+#: psychopy-studio/src/routes/runner/ribbon/Menu.svelte
+msgid "Preferences..."
+msgstr ""
+
+#: psychopy-studio/src/lib/ui/paramCtrls/ctrls/KeyPressCtrl.svelte
+msgid "Press keys, then click the tick to accept"
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/deviceManager/Dialog.svelte
+msgid "PsychoPy Devices"
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/projects/manage/ManageProjectsDlg.svelte
+msgid "PsychoPy Projects"
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid ""
+"PsychoPy needs to setup Python in order to run your experiments. Where "
+"should we put Python on your machine?"
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/pluginManager/Dialog.svelte
+#: psychopy-studio/src/lib/dialogs/pluginManager/PsychoPyBranchDlg.svelte
+msgid "Python environment:"
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid "Python environments will be created in:"
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid "Python is only setup once per version of PsychoPy"
+msgstr ""
+
+#: psychopy-studio/src/routes/coder/ribbon/Menu.svelte
+msgid "Report bug..."
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/pluginManager/VenvChooser.svelte
+msgid "Scanning Python environments..."
+msgstr ""
+
+#: psychopy-studio/src/routes/runner/ribbon/Ribbon.svelte
+msgid "Selection"
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid "Shared folder (recommended for classrooms)"
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid ""
+"System admins can control who is allowed to install PsychoPy versions and "
+"plugins"
+msgstr ""
+
+#: psychopy-studio/src/lib/ui/paramCtrls/ctrls/LocaleCtrl.svelte
+msgid "System language"
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid "This can use a lot of space on machines with lots of users"
+msgstr ""
+
+#: psychopy-studio/src/lib/dialogs/pluginManager/PsychoPyBranchDlg.svelte
+msgid "This will run the following command on OK:"
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid "User folder (recommended for most users)"
+msgstr ""
+
+#: psychopy-studio/src/lib/python/ChooseDirectory.svelte
+msgid "Where to setup Python..."
+msgstr ""
+
+#: psychopy/psychopy/preferences/hints.py
+msgid "library to use for reading cameras"
+msgstr ""
+
+#: psychopy-studio/src/routes/runner/outputs/AlertsOutput.svelte
+#, python-brace-format
+msgid "{} Alert"
+msgstr ""
+
+#: psychopy-studio/src/lib/ui/paramCtrls/ctrls/ConditionsCtrl.svelte
+#, python-brace-format
+msgid "{} conditions, with {} parameters"
+msgstr ""
+
+#~ msgid "Add multiple items"
+#~ msgstr ""
+
+#~ msgid "Preferences"
+#~ msgstr ""
+
+#~ msgid "Report bug"
+#~ msgstr ""
+
+#~ msgid "Find in experiment"
+#~ msgstr ""
+
+#~ msgid "Open folder"
+#~ msgstr ""
+
+#~ msgid "Search"
+#~ msgstr ""
+
 #~ msgid ""
 #~ "Device number, if you have multiple devices which one do you want (0, 1, "
 #~ "2...)"
@@ -11990,9 +12208,6 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Getting project info..."
-#~ msgstr ""
-
-#~ msgid "Search projects"
 #~ msgstr ""
 
 #, python-brace-format
